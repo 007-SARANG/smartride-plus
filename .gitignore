@@ -42,3 +42,8 @@ GTFS.zip
 
 # Duplicate GTFS data (keep only gtfs/ folder)
 gtfs-data/
+
+# Large GTFS files (keep only essential ones: stops.txt, routes.txt, trips.txt)
+gtfs/fare_attributes.txt
+gtfs/fare_rules.txt
+gtfs/stop_times.txt
