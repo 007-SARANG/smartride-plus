@@ -1,4 +1,7 @@
 # 🚍 SmartRide+ — AI-Powered Public Transport Assistant
+## 🌐 Live Demo
+**🚀 Deployed App:** [https://smartride-plus.vercel.app](https://smartride-plus.vercel.app)
+**📦 GitHub Repository:** [https://github.com/007-SARANG/smartride-plus](https://github.com/007-SARANG/smartride-plus)
 
 ![Next.js](https://img.shields.io/badge/Next.js-14.2.33-black?style=for-the-badge&logo=next.js)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.3-blue?style=for-the-badge&logo=typescript)
