@@ -39,3 +39,6 @@ next-env.d.ts
 *.rar
 *.7z
 GTFS.zip
+
+# Duplicate GTFS data (keep only gtfs/ folder)
+gtfs-data/
