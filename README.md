@@ -7,17 +7,17 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.3-blue?style=for-the-badge&logo=typescript)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38bdf8?style=for-the-badge&logo=tailwind-css)
 ![Socket.IO](https://img.shields.io/badge/Socket.IO-4.8-010101?style=for-the-badge&logo=socket.io)
-![Status](https://img.shields.io/badge/Status-Production_Ready-success?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Prototype-blue?style=for-the-badge)
 
-> 🏆 **Built for MLSC Hackathon 2025** - A complete, production-ready solution for smarter public transportation in India
+> 🏆 **Built for MLSC Hackathon 2025** — a prototype exploring public transport data and trip planning for Indian cities
 
-A modern web application featuring **real-time bus tracking**, **AI-powered route optimization** with Dijkstra's algorithm, **crowd density intelligence**, **emergency SOS features**, and **full offline PWA capabilities** — built specifically for Indian cities using official GTFS transit data.
+A web application prototype featuring GTFS-based route and stop browsing, deterministic shortest-path routing with Dijkstra's algorithm, crowd-density demo features, emergency-service lookup, and PWA support. Live vehicle tracking and production service reliability are not established.
 
 ## ⚠️ Static Simulation (Pending API Access)
 
-**IMPORTANT NOTE:** This project is currently using **static simulation with real Delhi DTC transit data** (GTFS feed with 10,559 real bus stops and 2,403 real routes). 
+**Status:** The deployed application uses static Delhi DTC GTFS data (the README records 10,559 stops and 2,403 routes) plus simulated bus movement. It does not currently provide live vehicle positions.
 
-📅 **API Access Pending:** Delhi OTD (Open Transit Data) API permissions are expected to be granted within **24-48 hours**. Once approved, the app will switch to live real-time bus tracking data automatically.
+**Delhi OTD live data is not configured.** The earlier estimate that API access would arrive within 24–48 hours is stale. Enabling live positions requires approved access and implementation/configuration; the application will not switch automatically.
 
 **Current Data Sources:**
 - ✅ **GTFS Static Data**: Official Delhi DTC stops, routes, and schedules
@@ -356,7 +356,7 @@ DC5678 | ISBT Kashmere Gate  | 28.667123, 77.228456
    function initializeDelhiBusesFromGTFS(): Bus[] {
      const stops = getRandomStops(30);    // 30 random real stops
      const routes = getRandomRoutes(20);  // 20 random real routes
-     
+
      // Create 20 buses with real GTFS data
      return buses.map((_, i) => ({
        id: `DL-REAL-${String(i + 1).padStart(3, '0')}`,
