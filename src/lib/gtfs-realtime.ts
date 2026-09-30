@@ -20,7 +20,7 @@ interface GTFSBusPosition {
 // MobilityData API Configuration
 const MOBILITY_DATA_API = {
   baseUrl: "https://api.mobilitydata.org/v1",
-  apiKey: process.env.NEXT_PUBLIC_MOBILITY_DATA_API_KEY || "AMf-vBwsJVxl4LFLVidoHhPgmeSczP9NTcs_xjnC0HFk3xAtT8cT4YDIz5qDh4i8x1oUbSqABGEkwPg_3OSYlfIbvYgbxqJJFUYPvI0gpAck-weFAq0YmUXl0L6kqYDlWa8ptSOnjHffOaXBL5tvxXHXy8sgsIGTXkinvGt0iFV8ME2TO72mKCoE1QPSgqkrUHU3p0n5nl4Zd1U9jESH9kVja80EOevYIrPfS_SJV4UhNVPY1aaK2r4",
+  apiKey: process.env.MOBILITY_DATA_API_KEY || "",
   enabled: false, // Disabled due to network issues - focusing on Delhi OTD
 };
 
@@ -29,14 +29,14 @@ const TRANSIT_APIS = {
   delhi: {
     name: "Delhi Transport Corporation",
     baseUrl: "https://otd.delhi.gov.in/api/realtime/VehiclePositions",
-    apiKey: process.env.NEXT_PUBLIC_DELHI_OTD_API_KEY || "",
+    apiKey: process.env.DELHI_OTD_API_KEY || "",
     enabled: false, // ⚠️ TEMPORARILY DISABLED - API endpoint returning 404
     format: "pb", // Protocol Buffer format
   },
   bangalore: {
     name: "BMTC Bangalore",
     baseUrl: "https://api.mybmtc.com/v1/vehicles",
-    apiKey: process.env.NEXT_PUBLIC_BMTC_API_KEY || "",
+    apiKey: process.env.BMTC_API_KEY || "",
     enabled: false,
   },
   // Add more cities as you get API access
