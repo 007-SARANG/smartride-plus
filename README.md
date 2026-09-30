@@ -168,10 +168,10 @@ Create `.env.local` in the root directory:
 
 ```env
 # Mapbox API (maps, routing, geocoding)
-NEXT_PUBLIC_MAPBOX_TOKEN=pk.your_mapbox_public_token_here
+NEXT_PUBLIC_MAPBOX_TOKEN=your_value_here
 
 # Firebase Configuration (real-time database)
-NEXT_PUBLIC_FIREBASE_API_KEY=AIzaSy...your_key
+NEXT_PUBLIC_FIREBASE_API_KEY=your_value_here
 NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your-project.firebaseapp.com
 NEXT_PUBLIC_FIREBASE_PROJECT_ID=your-project-id
 NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your-project.appspot.com
@@ -180,14 +180,14 @@ NEXT_PUBLIC_FIREBASE_APP_ID=1:123:web:abc
 NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID=G-XXXXXXXXXX
 
 # Google Places API (emergency services)
-NEXT_PUBLIC_GOOGLE_PLACES_API_KEY=AIzaSyD0lCdYoCiCpUeuwe9sXF_LJH2TWCUFPWM
+GOOGLE_PLACES_API_KEY=your_value_here
 
 # Delhi OTD API (pending approval - 24-48 hrs)
-NEXT_PUBLIC_DELHI_OTD_API_KEY=4gr4cxuqGoytWs0LHUhgCuPWtc64LOZE
+NEXT_PUBLIC_DELHI_OTD_API_KEY=your_value_here
 NEXT_PUBLIC_DELHI_OTD_API_URL=https://otd.delhi.gov.in/api/realtime
 
 # MobilityData API (optional - currently disabled due to DNS issues)
-NEXT_PUBLIC_MOBILITYDATA_API_KEY=your_key_here
+NEXT_PUBLIC_MOBILITYDATA_API_KEY=your_value_here
 NEXT_PUBLIC_MOBILITYDATA_API_URL=https://api.mobilitydatabase.org/v1
 ```
 
@@ -410,17 +410,17 @@ All API keys are stored in `.env.local` file:
 
 ```env
 # ✅ ACTIVE - Mapbox (Required)
-NEXT_PUBLIC_MAPBOX_TOKEN=pk.eyJ1... (your token)
+NEXT_PUBLIC_MAPBOX_TOKEN=your_value_here
 
 # ✅ ACTIVE - Google Places (Required for SOS)
-NEXT_PUBLIC_GOOGLE_PLACES_API_KEY=AIzaSyD0lCdYoCiCpUeuwe9sXF_LJH2TWCUFPWM
+GOOGLE_PLACES_API_KEY=your_value_here
 
 # ⏳ PENDING - Delhi OTD (Will activate automatically)
-NEXT_PUBLIC_DELHI_OTD_API_KEY=4gr4cxuqGoytWs0LHUhgCuPWtc64LOZE
+NEXT_PUBLIC_DELHI_OTD_API_KEY=your_value_here
 NEXT_PUBLIC_DELHI_OTD_API_URL=https://otd.delhi.gov.in/api/realtime
 
 # Optional - Firebase (for production crowd data)
-NEXT_PUBLIC_FIREBASE_API_KEY=your_key
+NEXT_PUBLIC_FIREBASE_API_KEY=your_value_here
 # ... other Firebase configs
 ```
 

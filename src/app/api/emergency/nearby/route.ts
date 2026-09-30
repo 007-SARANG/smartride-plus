@@ -73,9 +73,9 @@ export async function GET(request: NextRequest) {
     }
 
     // ✅ REAL Google Places API Integration
-    const googleApiKey = process.env.NEXT_PUBLIC_GOOGLE_PLACES_API_KEY;
+    const googleApiKey = process.env.GOOGLE_PLACES_API_KEY;
     
-    if (googleApiKey && googleApiKey !== 'AIzaSyCRkQm-66A4X9g9WugQgy7-WD0Z9XydOWI') {
+    if (googleApiKey) {
       console.log('🛰️ Using REAL Google Places API for emergency services');
       
       const types = ['police', 'hospital', 'fire_station'];
